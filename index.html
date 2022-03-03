@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title></title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pantzin - principal</title>
 
     </head>
     <body>
+        <img src="./assets/logo/logo_small.png" alt="logo Pantzin" width="100px">
+        <h1> PANTZIN </h1>
+        <p>¡ Bienvenido a la sección de pedidos, el primer paso es personalizar tu pastel cuando estés listo selecciona "siguiente" !</p>
+        <hr>
+        <form>
+            <p>¿De cuántos niveles tu pastel?</p>
+            <input type="radio" id="unpiso" name="nivelpastel" value="1">
+            <label for="1">1 --> $125</label><br>
+            <input type="radio" id="dospisos" name="nivelpastel" value="2">
+            <label for="2">2 --> $250</label><br>
+            <input type="radio" id="trespisos" name="nivelpastel" value="3">
+            <label for="3">3 --> $375</label>
+            <hr>
+            <p>Seleccione el tipo de Bizcocho</p>
+            <input type="radio" id="americano" name="bizcocho" value="am">
+            <label for="am">Americano</label><br>
+            <input type="radio" id="leche" name="bizcocho" value="leche">
+            <label for="leche">Tres leches</label><br>
+            <form>
+                <p>¿De que sabor será el primer nivel?</p>
+                <input type="radio" id="zanahoria" name="sabor" value="znh">
+                <label for="znh">Bizcocho de zanahoria  --- + $50</label><br>
+                <input type="radio" id="vainilla" name="sabor" value="vnll">
+                <label for="vnll">Bizcocho de vainilla  --- + $25</label><br>
+                <input type="radio" id="choco" name="sabor" value="choco">
+                <label for="choco">Bizcocho de chocolate  --- + $50</label><br>
+                <input type="radio" id="naranja" name="sabor" value="nrja">
+                <label for="nrja">Bizcocho de naranja  --- + $25</label><br>
+                <input type="radio" id="limon" name="sabor" value="lmn">
+                <label for="lmn">Bizcocho de limón  --- + $20</label><br>
+                <input type="radio" id="redV" name="sabor" value="redV">
+                <label for="redV">Bizcocho de red velvet  --- + $60</label><br>
+            </form>
+            <form>
+                <p>¿De que sabor será el segundo nivel? NOTA: si su pastel es de un sólo nivel seleccione "ninguno"</p>
+                <input type="radio" id="zanahoria" name="sabor" value="znh">
+                <label for="znh">Bizcocho de zanahoria  --- + $50</label><br>
+                <input type="radio" id="vainilla" name="sabor" value="vnll">
+                <label for="vnll">Bizcocho de vainilla  --- + $25</label><br>
+                <input type="radio" id="choco" name="sabor" value="choco">
+                <label for="choco">Bizcocho de chocolate  --- + $50</label><br>
+                <input type="radio" id="naranja" name="sabor" value="nrja">
+                <label for="nrja">Bizcocho de naranja  --- + $25</label><br>
+                <input type="radio" id="limon" name="sabor" value="lmn">
+                <label for="lmn">Bizcocho de limón  --- + $20</label><br>
+                <input type="radio" id="ninguno" name="sabor" value="no">
+                <label for="no">Ninguno</label><br>
+            </form>
+            <form>
+                <p>¿De que sabor será el tercer nivel? NOTA: si su pastel es de un sólo nivel seleccione "ninguno"</p>
+                <input type="radio" id="zanahoria" name="sabor" value="znh">
+                <label for="znh">Bizcocho de zanahoria  --- + $50</label><br>
+                <input type="radio" id="vainilla" name="sabor" value="vnll">
+                <label for="vnll">Bizcocho de vainilla  --- + $25</label><br>
+                <input type="radio" id="choco" name="sabor" value="choco">
+                <label for="choco">Bizcocho de chocolate  --- + $50</label><br>
+                <input type="radio" id="naranja" name="sabor" value="nrja">
+                <label for="nrja">Bizcocho de naranja  --- + $25</label><br>
+                <input type="radio" id="limon" name="sabor" value="lmn">
+                <label for="lmn">Bizcocho de limón  --- + $20</label><br>
+                <input type="radio" id="ninguno" name="sabor" value="no">
+                <label for="no">Ninguno</label><br>
+            </form>
 
+            <hr>
+            <p>¿De que sabor será el relleno? ---> + $60 cualquier sabor </p>
+            <select name="relleno" id="relleno">
+                <option value="ninguno">Seleccione la opción</option>
+                <option value="fresa">Mermelada de fresa con trufa de chocolate</option>
+                <option value="zarzamora">Mermelada de zarzamora con queso crema</option>
+                <option value="cacahuate">Receta especial de crema de cacahuate</option>
+                <option value="Merengue">Receta especial de merengue</option>
+            </select>
+            <hr>
+            <p>Seleccione máximo 3 elementos de presentación</p>
+            <input type="checkbox" id="frutasAll" name="frutas" value="tropical">
+            <label for="tropical">Frutas tropicales</label><br>
+            <input type="checkbox" id="choc" name="frutas" value="chocolate">
+            <label for="chocolate">Ganache de chocolate</label><br>
+            <input type="checkbox" id="fresas" name="frutas" value="fresas">
+            <label for="tropical">Fresas</label><br>
+            <input type="checkbox" id="fondant" name="frutas" value="fondant">
+            <label for="fondant">Fondant</label><br>
+            <input type="checkbox" id="nombre" name="frutas" value="nombre">
+            <label for="nombre">Mensaje especial</label><br>
+            <input type="checkbox" id="merengue" name="frutas" value="merengue">
+            <label for="merengue">Merengue clásico</label><br>
+            <hr>
+        </form>
+        <button>siguiente</button>
     </body>
 
 
